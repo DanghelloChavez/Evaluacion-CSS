@@ -1,0 +1,180 @@
+head
+{
+  font-family: Dancing Script;
+  background-color: red;
+}
+body {
+	font-size: 1em;
+	font-family: Dancing Script;
+  background-color: #02010a;
+}
+.contenedor-general{
+  width: 900px;
+  margin:auto;
+  border-radius: 25px;
+  animation: slideIn 3s;
+}
+
+p{
+  text-shadow: 1px 1px;
+  font-size: 3em;
+}
+.enlaces{
+  text-align: right;
+  font-size: 2em;
+}
+.titulo{
+  text-align: left;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px #ff0000;
+}
+img{
+  border-radius: 20px;
+  border: 1px black solid;
+}
+
+h1{
+  font-family: Dancing Script;
+  font-family: cursive;
+  color: White;
+}
+footer{
+  font-size: 2em;
+  font-family: Dancing Script;
+  color: Brown;
+  border: 1px black solid;
+  background-color: #C6d5c5;
+}
+.contenedor-pie{
+  display: flex;
+  flex-direction: row;
+
+}
+#informacion{
+  order: 1;
+  font-size: 15px;
+  padding-left: 10px;
+}
+#terminos{
+  order: 2;
+  font-size: 15px;
+  padding-left: 30px;
+}
+#redes{
+  order: 3;
+  font-size: 15px;
+  padding-right: 20px;
+}
+#derechos{
+  order: 4;
+  font-size: 15px;
+}
+header{
+  background-color: #5b7989;
+  animation: slidein 1s;
+}
+@-webkit-keyframes slidein {
+0%{
+margin-top: 150%;
+}
+60%{
+margin-top: -5%;
+}
+100%{
+margin-top: 0%;
+}
+}
+@media only screen and (max-width: 900px){
+  .contenedor-general{
+    width: 100%;
+  }
+  .titulo{
+    text-align: center;
+  }
+  #taco{
+    text-align: center;
+  }
+  .contenedor-pie{
+    flex-direction: column;
+    text-align: left;
+    color: black;
+  }
+  #imagen-central{
+    flex-direction: column;
+  }
+  #es{
+    width: 60%;
+  }
+  #imagenes-secundarias{
+    flex-direction: column;
+  }
+  #derecho{
+    margin: auto;
+    width: 100%;
+    height: 200px;
+  }
+  #izquierdo{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+  }
+  #informacion{
+    color: black;
+    padding-left: 20px;
+  }
+  #terminos{
+    color: black;
+    padding-left: 20px;
+  }
+  #redes{
+    color: black;
+    padding-left: 20px;
+  }
+  #derechos{
+    color: black;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+  .contenedor-general h1{
+    color: black;
+  }
+}
+@media print{
+  img{
+    width: 100%;
+  }
+}
+#imagen-central{
+  background-color: #82c3a6;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#imagenes-secundarias{
+  background-color: #d5c75f;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+}
+#izquierdo{
+  text-align: left;
+  margin-right: 20px;
+}
+#izquierdo:hover{
+  transform: rotate(10deg);
+  border: 2px;
+  box-shadow: 2px 2px 2px #02010a;
+  transition: 2s;
+}
+#derecho{
+  text-align: right;
+  margin-left: 20px;
+}
+#derecho:hover{
+  transform: translate(10px);
+  border: 2px;
+  box-shadow: 2px 2px 2px #82c3a6;
+  transition: 1s;
+}
